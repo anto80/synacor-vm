@@ -23,4 +23,8 @@ Running
 warning : This command has only been tested on OSX
 
 	redis-cli set "synacor_challenge:bin" "$(od -d -An challenge.bin | xargs)" && redis-cli EVAL "$(cat vm.lua)" 0 input1 input2 .. | xargs -0 echo
+	
+	
+	
+[![Analytics](https://ga-beacon.appspot.com/UA-46796078-1/synacor-vm)](https://github.com/anto80/synacor-vm)
 
